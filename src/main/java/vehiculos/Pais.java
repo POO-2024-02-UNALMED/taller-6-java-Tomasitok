@@ -25,6 +25,7 @@ public class Pais {
         Pais paisMaximo = null;
         for(Fabricante f : listadoFabricantes){
             if (f.getPais().getContador() >= maximo) { 
+                maximo = f.getPais().getContador();
                 paisMaximo = f.getPais();
             }
         }

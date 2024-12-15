@@ -20,6 +20,7 @@ public class Fabricante {
         Fabricante fabricante = null;
         for(Fabricante f : listadoFabricantes){
             if(f.getContador() >= maximo){
+                maximo = f.getContador();
                 fabricante = f;
             }
         }
